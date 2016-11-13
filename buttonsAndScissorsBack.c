@@ -175,7 +175,7 @@ char** crearMatriz(int n)
 
 int Escero(char **matriz,int F1,int C1,int df,int dc,int salto)
 {
-  if (matriz[F1][C1]=='0')
+  if (matriz[F1+df*salto][C1+dc*salto]=='0')
     return VERDADERO;
   else
     return FALSO;
